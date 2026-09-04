@@ -1,1 +1,98 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+
+:root {
+    --branco: #fff;
+    --cinza-texto: #dbdbdb;
+    --cinza-sub: #6d6c6c;
+    --cinza-sub-az: #dcdcdc;
+    --cinza-infos: #313131;
+    --az-petroleo: #142c4c;
+    --az-royal: #0f2a71;
+    --az-destaque: #007be5;
+    --az-mar: #001740;
+    --az-mar-blur: #00174057;
+    --am-dourado: #f4c400;
+    --am-leve: #ffdb60;
+    --am-leve-blur: #ffda60e4;
+}
+
+* {
+    font-family: "Alegreya Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main-section section:not(#capa) {
+    margin: 7rem auto 0 auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.nome-secao {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+    color: var(--cinza-sub);
+}
+
+.subtitulo-az {
+    font-size: 1.5rem;
+    color: var(--cinza-sub-az);
+}
+
+.card {
+    padding: 2.5rem 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--az-petroleo);
+    box-shadow:
+        0 4px 8px 0 #63636333,
+        0 6px 20px 0 #36363630;
+}
+
+.botao {
+    background-color: var(--am-dourado);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+
+.botao:hover {
+    background-color: var(--am-leve);
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .subtitulo,
+    .subtitulo-az {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .nome-secao {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .subtitulo,
+    .subtitulo-az {
+        text-align: center;
+    }
+}
