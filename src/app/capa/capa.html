@@ -1,1 +1,74 @@
-<p>capa works!</p>
+<section id="capa">
+    <header>
+        <nav class="navegacao">
+            <div class="espaco-logo">
+                <div class="logo">
+                    <img src="./assets/CenterPsy-Logo.png" alt="Logo da Empresa" class="logo-image">
+                </div>
+                <div class="nome-clinica">
+                    <h1 class="clinica">CenterPsy</h1>
+                    <h2 class="local">PSICOLOGIA CLÍNICA</h2>
+                </div>
+            </div>
+
+            <div class="nav-secao" [class.active]="isMenuOpen">
+                <ul>
+                    <a href="/#abordagem" class="anchor" (click)="closeMenu()">
+                        <li class="link">A Abordagem</li>
+                    </a>
+                    <a href="/#start" class="anchor" (click)="closeMenu()">
+                        <li class="link">Como Começar</li>
+                    </a>
+                    <a href="/#about" class="anchor" (click)="closeMenu()">
+                        <li class="link">Sobre mim</li>
+                    </a>
+                </ul>
+                <a href="/#contato" class="anchor" (click)="closeMenu()">
+                    <button class="botao botao-mobile">Primeiro Contato <i class="las la-arrow-right"></i></button>
+                </a>
+            </div>
+
+            <a href="/#contato" class="anchor desktop-btn">
+                <button class="botao">Primeiro Contato <i class="las la-arrow-right"></i></button>
+            </a>
+
+            <button class="menu-toggle" (click)="toggleMenu()" aria-label="Abrir Menu">
+                <i class="las" [ngClass]="isMenuOpen ? 'la-times' : 'la-bars'"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main id="hero-main">
+        <div class="informacoes">
+            <span class="psy-eyebrow">Um espaço para você</span>
+            <h1>
+                voltar a se
+                <br />
+                <em>escutar.</em>
+            </h1>
+            <p class="psy-hero-copy">
+                Psicoterapia é um encontro seguro para entender o que você sente,
+                com mais gentileza e menos pressa.
+            </p>
+            <div class="psy-hero-actions">
+                <a href="/#contato">
+                    <button type="button" class="botao">Quero dar o primeiro passo<i class="las la-arrow-right"></i></button>
+                </a>
+                <a class="psy-text-link botao" href="#abordagem">
+                    Conhecer a abordagem
+                    <i class="las la-arrow-down"></i>
+                </a>
+            </div>
+            <p class="psy-hero-note">
+                <i class="las la-hand-holding-heart"></i>
+                Atendimento para adultos
+            </p>
+        </div>
+
+        <div class="hero-container">
+            <div class="arch-container">
+                <img src="assets/gilson.jpeg" alt="Pessoa" class="arch-image" />
+            </div>
+        </div>
+    </main>
+</section>
