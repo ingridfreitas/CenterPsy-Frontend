@@ -19,6 +19,8 @@
 * {
     font-family: "Alegreya Sans", sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -68,7 +70,7 @@ html {
     padding: 1rem 2rem;
     border-radius: 10px;
     font-size: 1.3rem;
-    margin-top: 2rem;
+    border: none;
 }
 
 .botao:hover {
