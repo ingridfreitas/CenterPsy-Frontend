@@ -138,18 +138,7 @@ h2{
     color: #F4C400;
 }
 
-@media (max-width: 900px) {
-
-    #abordagem {
-        padding: 100px 30px 70px;
-    }
-
-    .div_reader {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-    }
-
+@media (max-width: 1024px) {
     .div_maior {
         flex-direction: column;
         gap: 30px;
@@ -158,18 +147,30 @@ h2{
     .div_quadros {
         width: 100%;
         height: auto;
+        margin-top: 2rem;
     }
 
     .div_quadrao {
         width: 100%;
+        height: auto;
+        padding: 30px;
+        margin-top: 0;
+    }
+
+    .usuario {
+        margin-top: -35px;
     }
 }
 
-
-@media (max-width: 600px) {
-
+@media (max-width: 768px) {
     #abordagem {
-        padding: 70px 20px 50px;
+        padding: 60px 24px 50px;
+    }
+
+    .div_reader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
     }
 
     .fonte_header2 {
@@ -183,39 +184,82 @@ h2{
     .div_quadros {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: auto;
+        gap: 16px;
     }
 
     .quadros {
         width: 100%;
         height: auto;
-        min-height: 220px;
         padding: 20px;
     }
 
+    i {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
     h2 {
-        margin-top: 100px;
+        margin-top: 12px;
+        margin-left: 0;
         font-size: 20px;
     }
 
     .p_quadros {
-        font-size: 15px;
+        margin-left: 0;
     }
 
-    .div_quadrao {
-        width: 100%;
-        height: auto;
-        min-height: 300px;
-        padding: 30px;
-    }
-
-    .aspas,
+    .aspas, 
     .p_quadrao {
         margin-left: 0;
     }
 
     .p_quadrao {
-        font-size: 25px;
+        font-size: 22px;
+    }
+
+    .i_usuario {
+        margin-top: 20px;
+    }
+
+    .usuario {
+        margin-top: -35px;
+        margin-left: 60px;
+    }
+
+    .usuario2 {
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    #abordagem {
+        padding: 40px 16px 40px;
+    }
+
+    .fonte_header2 {
+        font-size: 26px;
+    }
+
+    .p_quadrao {
+        font-size: 18px;
+    }
+
+    .quadros {
+        padding: 16px;
+    }
+
+    .div_quadrao {
+        padding: 20px;
+    }
+
+    .usuario {
+        margin-top: -38px;
+        margin-left: 55px;
+        font-size: 13px;
+    }
+
+    .usuario2 {
+        margin-left: 55px;
+        font-size: 12px;
     }
 }
