@@ -1,0 +1,265 @@
+#abordagem {
+  position: relative;
+  height: auto;
+  padding: 148px max(32px, calc((100% - 1180px) / 2)) 95px;
+  overflow: hidden;
+  background: #F5F1E9;
+}
+
+.fonte_header{
+    font-size: 13px;
+    color: #007BE5;
+    font-weight: bold;
+    letter-spacing: 0.16em;
+}
+
+i{
+    margin-top: 7%;
+    margin-left: 10%;
+    color: #0F2A71;
+}
+.fonte_header2{
+    font-size: 44.01px;
+    color: #001740;
+    font-weight: bold;
+}
+.psy-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: #007BE5;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.psy-eyebrow::before {
+  width: 28px;
+  height: 1px;
+  background: currentColor;
+  content: "";
+}
+.div_reader{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+p{
+    color: #6D6C6C;
+    font-size: 19px;
+}
+
+.aspas{
+    margin-left: 10%;
+    text-align:left;
+    font-size: 54px;
+    color: #FFDB60;
+    font-weight: 700;
+    
+}
+.p_quadrao{
+    margin-left: 10%;
+    text-align:left;
+    font-size: 31px;
+    color: #FFFFFF;
+}
+
+.div_maior{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+.div_quadros{
+    margin-top: 4rem;
+    width: 45rem;
+    height: 30rem;
+    border-radius: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div_quadrao{
+    margin-top: 4rem;
+    width: 25rem;
+    height: 30rem;
+    background-color: #142C4C;
+    border-radius: 5%;
+}
+.quadros{
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 0 1px 1px #b1aba1;
+    border-radius: 1.5%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quadros:hover{
+    background-color: #e4ded2;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.i_usuario{
+    margin-top: 35%;
+    color: #F4C400;
+}
+
+.usuario{
+    margin-top: -10%;
+    margin-left: 25%;
+    font-size: 14px;
+    color: #DBDBDB
+}
+
+.usuario2{
+    margin-left: 25%;
+    font-size: 14px;
+    color: #DBDBDB
+}
+h2{
+    margin-left: 5%;
+    margin-top: 10%;
+    color: #001740;
+    font-size: 23px;
+}
+
+.p_quadros{
+    font-size: 16px;
+    color:#6D6C6C;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.info{
+    height: 25px;
+    width: 25px;
+    border-radius: 10%;
+    color: #F4C400;
+}
+
+@media (max-width: 1024px) {
+    .div_maior {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .div_quadros {
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .div_quadrao {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        margin-top: 0;
+    }
+
+    .usuario {
+        margin-top: -35px;
+    }
+}
+
+@media (max-width: 768px) {
+    #abordagem {
+        padding: 60px 24px 50px;
+    }
+
+    .div_reader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .fonte_header2 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .div_quadros {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .quadros {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    i {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    h2 {
+        margin-top: 12px;
+        margin-left: 0;
+        font-size: 20px;
+    }
+
+    .p_quadros {
+        margin-left: 0;
+    }
+
+    .aspas, 
+    .p_quadrao {
+        margin-left: 0;
+    }
+
+    .p_quadrao {
+        font-size: 22px;
+    }
+
+    .i_usuario {
+        margin-top: 20px;
+    }
+
+    .usuario {
+        margin-top: -35px;
+        margin-left: 60px;
+    }
+
+    .usuario2 {
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    #abordagem {
+        padding: 40px 16px 40px;
+    }
+
+    .fonte_header2 {
+        font-size: 26px;
+    }
+
+    .p_quadrao {
+        font-size: 18px;
+    }
+
+    .quadros {
+        padding: 16px;
+    }
+
+    .div_quadrao {
+        padding: 20px;
+    }
+
+    .usuario {
+        margin-top: -38px;
+        margin-left: 55px;
+        font-size: 13px;
+    }
+
+    .usuario2 {
+        margin-left: 55px;
+        font-size: 12px;
+    }
+}
