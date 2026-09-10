@@ -27,7 +27,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.main-section section:not(#capa, #abordagem) {
+.main-section section:not(#capa, #abordagem, #start) {
     margin: 7rem auto 0 auto;
     width: 80%;
     display: flex;
