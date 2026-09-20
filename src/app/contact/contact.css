@@ -1,0 +1,204 @@
+/* =========================================================
+   PRIMEIRO CONTATO
+   ========================================================= */
+
+.contact-section {
+  width: 100%;
+  padding: 100px 8%;
+  background-color: var(--az-mar);
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+
+/* =========================================================
+   INTRODUÇÃO
+   ========================================================= */
+
+.contact-intro {
+  color: #ffffff;
+}
+
+.contact-label {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--am-leve);
+}
+
+.contact-intro h2 {
+  margin: 0 0 24px;
+
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  line-height: 1.05;
+  font-weight: 600;
+}
+
+.contact-intro p {
+  max-width: 460px;
+  margin: 0;
+
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* =========================================================
+   FORMULÁRIO
+   ========================================================= */
+
+.contact-form-container {
+  width: 100%;
+  padding: 40px;
+
+  background-color: var(--branco);
+  border-radius: 18px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--az-mar);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 14px 16px;
+
+  border: 1px solid rgba(20, 44, 76, 0.25);
+  border-radius: 8px;
+
+  background-color: #ffffff;
+  color: var(--az-mar);
+
+  font-family: inherit;
+  font-size: 1rem;
+
+  outline: none;
+
+  transition: border-color 0.2s ease;
+}
+
+.form-group textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--az-destaque);
+}
+
+
+/* =========================================================
+   BOTÃO
+   ========================================================= */
+
+.contact-button {
+  align-self: flex-start;
+
+  padding: 14px 28px;
+
+  border: none;
+  border-radius: 6px;
+
+  background-color: var(--am-dourado);
+  color: var(--az-mar);
+
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.contact-button:hover {
+  background-color: var(--am-leve);
+}
+
+.contact-button:focus-visible {
+  outline: 3px solid var(--am-leve);
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .contact-section {
+    padding: 80px 6%;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .contact-intro p {
+    max-width: 600px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 60px 5%;
+  }
+
+  .contact-container {
+    gap: 35px;
+  }
+
+  .contact-intro h2 {
+    font-size: 2.4rem;
+  }
+
+  .contact-intro p {
+    font-size: 1rem;
+  }
+
+  .contact-form-container {
+    padding: 28px 22px;
+    border-radius: 14px;
+  }
+
+  .contact-form {
+    gap: 20px;
+  }
+
+  .contact-button {
+    width: 100%;
+  }
+}

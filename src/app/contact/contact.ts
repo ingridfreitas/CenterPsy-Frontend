@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class Contact {
 
+  enviarFormulario(event: SubmitEvent): void {
+    event.preventDefault();
+  }
+
 }
