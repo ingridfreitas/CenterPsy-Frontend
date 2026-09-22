@@ -8,7 +8,7 @@
 
 .fonte_header{
     font-size: 13px;
-    color: #007BE5;
+    color: #006AC7;
     font-weight: bold;
     letter-spacing: 0.16em;
 }
@@ -47,7 +47,7 @@ i{
 }
 
 p{
-    color: #6D6C6C;
+    color: #4D4D4D;
     font-size: 19px;
 }
 
@@ -126,7 +126,7 @@ h2{
 
 .p_quadros{
     font-size: 16px;
-    color:#6D6C6C;
+    color:#4D4D4D;
     margin-left: 5%;
     margin-top: 1%;
 }
