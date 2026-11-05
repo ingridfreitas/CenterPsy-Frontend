@@ -1,22 +1,23 @@
 #start {
   position: relative;
   height: auto;
-  padding: 148px max(32px, calc((100% - 1180px) / 2)) 95px;
+  padding: 9.25rem max(2rem, calc((100% - 73.7rem) / 2)) 5.9rem;
   overflow: hidden;
-  background: #0F2A71;
+  background: var(--tom-principal);
 }
 
 .fonte_header2{
-    font-size: 44.01px;
-    color: #FFFFFF;
+    font-size: 2.75rem;
+    color: var(--creme-suave);
     font-weight: bold;
 }
+
 .psy-eyebrow {
     display: inline-flex;
     align-items: center;
-    gap: 9px;
-    color: #FFFFFF;
-    font-size: 13px;
+    gap: 1rem;
+    color: var(--acento-leve);
+    font-size: 1.3rem;
     font-weight: 700;
     letter-spacing: 0.16em;
     text-transform: uppercase;
@@ -28,33 +29,30 @@
   background: currentColor;
   content: "";
 }
+
 .div_reader{
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 3rem;
 }
 
 p{
-    color: #DBDBDB;
-    font-size: 19px;
+    color: var(--texto-claro);
+    font-size: 1.25rem;
 }
 
 .div_passos{
     margin-top: 4rem;
-    display: flex;
-    border-top: 1px solid #ffffff4d;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--acento-leve-blur);
 }
 
 .passo_item{
-    width: 33.33%;
     min-height: 15rem;
-    padding: 33px 33px 30px 0;
-    border-right: 1px solid #ffffff4d;
+    padding: 2rem 1.7rem;
+    border-right: 1px solid var(--acento-leve-blur);
     transition: transform 0.3s ease;
-}
-
-.passo_item:not(:first-child){
-    padding-left: 33px;
 }
 
 .passo_item:last-child{
@@ -66,60 +64,43 @@ p{
 }
 
 .passo_numero{
-    color: #FFDB60;
-    font-size: 14px;
+    color: var(--acento-leve);
+    font-size: 0.9rem;
     font-weight: 700;
     letter-spacing: 0.12em;
 }
 
 h2{
     margin-top: 10%;
-    color: #FFFFFF;
-    font-size: 23px;
+    color: var(--creme-base);
+    font-size: 1.5rem;
 }
 
 .p_passos{
-    font-size: 16px;
-    color:#DBDBDB;
-    margin-top: 1%;
+    font-size: 1rem;
+    color: var(--creme-suave);
+    margin-top: 1rem;
 }
 
 @media (max-width: 1024px) {
-    .div_reader {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-    }
 
     .div_passos {
-        flex-direction: column;
-        margin-top: 2rem;
+        gap: 1rem;
     }
 
     .passo_item {
-        width: 100%;
         min-height: auto;
-        padding: 26px 0 27px;
-        border-right: 0;
-        border-bottom: 1px solid #ffffff4d;
-    }
-
-    .passo_item:not(:first-child) {
-        padding-left: 0;
-    }
-
-    .passo_item:last-child {
-        border-bottom: 0;
+        padding: 1.6rem;
     }
 }
 
 @media (max-width: 768px) {
     #start {
-        padding: 60px 24px 50px;
+        padding-top: 4rem;
     }
 
     .fonte_header2 {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     p {
@@ -134,11 +115,36 @@ h2{
 
 @media (max-width: 480px) {
     #start {
-        padding: 40px 16px 40px;
+        padding-top: 4rem;
     }
 
     .fonte_header2 {
-        font-size: 26px;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .div_reader {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .div_reader p{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .div_passos {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .passo_item {
+        border-right: 0;
+        border-bottom: 1px solid var(--acento-leve-blur);
+    }
+
+    .passo_item:last-child {
+        border-bottom: 0;
     }
 
     .passo_item {

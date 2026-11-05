@@ -1,19 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
 
 :root {
-    --branco: #fff;
-    --cinza-texto: #dbdbdb;
-    --cinza-sub: #6d6c6c;
-    --cinza-sub-az: #dcdcdc;
-    --cinza-infos: #313131;
-    --az-petroleo: #142c4c;
-    --az-royal: #0f2a71;
-    --az-destaque: #007be5;
-    --az-mar: #001740;
-    --az-mar-blur: #00174057;
-    --am-dourado: #f4c400;
-    --am-leve: #ffdb60;
-    --am-leve-blur: #ffda60e4;
+    /* Bases e Fundos */
+    --branco: #ffffff;
+    --creme-base: #f2e9da;          /* Antigo background principal, agora em tom refinado */
+    --creme-suave: #faf6f0;         /* Substitui o --cinza-sub-az (cards, fundos alternativos) */
+
+    /* Textos e Leitura */
+    --texto-principal: #332b27;     /* Substitui o --cinza-infos (marrom bem escuro para leitura confortável) */
+    --texto-sub: #7a6e67;           /* Substitui o --cinza-sub (marrom acinzentado para legendas e sub-títulos) */
+    --texto-claro: #e6dfd3;         /* Substitui o --cinza-texto (para fundos escuros) */
+
+    /* Tons de Destaque / Identidade (Feminino & Elegante) */
+    --tom-principal: #6e4b44;       /* Substitui o --az-petroleo (marrom rosado profundo/sobrio) */
+    --tom-secundario: #a3726a;      /* Substitui o --az-royal (terracota rosado/terroso) */
+    --tom-destaque: #d49a89;        /* Substitui o --az-destaque (rosa queimado/nude quente para botões e links) */
+    --tom-escuro-fundo: #2b1e1b;    /* Substitui o --az-mar (tom café/vinho escuro para footers ou modais) */
+    --tom-escuro-blur: #2b1e1b57;   /* Substitui o --az-mar-blur */
+
+    /* Acentos e Alertas (Substitutos dos Amarelos) */
+    --acento-dourado: #d9a05b;      /* Substitui o --am-dourado (dourado rosé / âmbar suave) */
+    --acento-leve: #f7e3d0;         /* Substitui o --am-leve (pêssego bem suave) */
+    --acento-leve-blur: #f7e3d0e4;    /* Substitui o --am-leve-blur */
 }
 
 * {
@@ -43,12 +51,12 @@ html {
 
 .subtitulo {
     font-size: 1.5rem;
-    color: var(--cinza-sub);
+    color: var(--texto-sub);
 }
 
 .subtitulo-az {
     font-size: 1.5rem;
-    color: var(--cinza-sub-az);
+    color: var(--creme-suave);
 }
 
 .card {
@@ -66,7 +74,7 @@ html {
 }
 
 .botao {
-    background-color: var(--am-dourado);
+    background-color: var(--acento-leve);
     padding: 1rem 2rem;
     border-radius: 10px;
     font-size: 1.3rem;
@@ -74,7 +82,7 @@ html {
 }
 
 .botao:hover {
-    background-color: var(--am-leve);
+    background-color: var(--acento-leve);
     transition: 0.3s;
     cursor: pointer;
     transform: scale(1.05);

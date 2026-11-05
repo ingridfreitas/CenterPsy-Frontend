@@ -25,7 +25,8 @@
   height: 480px;
   object-fit: cover;
   border-radius: 180px 180px 20px 20px;
-  border: 1px solid var(--az-petroleo);
+  border: 1px solid var(--tom-principal);
+  background-color: var(--creme-base);
 }
 
 .about-crp {
@@ -35,8 +36,8 @@
 
   padding: 0.8rem 1rem;
 
-  background-color: var(--am-leve);
-  color: var(--az-mar);
+  background-color: var(--tom-destaque);
+  color: var(--tom-escuro-fundo);
 
   border-radius: 8px;
 
@@ -60,7 +61,7 @@
 
   margin-bottom: 1rem;
 
-  color: var(--az-destaque);
+  color: var(--tom-destaque);
 
   font-size: 1rem;
   font-weight: 700;
@@ -74,13 +75,13 @@
   width: 30px;
   height: 1px;
 
-  background-color: var(--az-destaque);
+  background-color: var(--tom-destaque);
 }
 
 .about-content h2 {
   margin-bottom: 1.5rem;
 
-  color: var(--az-mar);
+  color: var(--tom-escuro-fundo);
 
   font-size: 3.2rem;
   line-height: 1.1;
@@ -89,7 +90,7 @@
 .about-content p {
   margin-bottom: 1.2rem;
 
-  color: var(--az-mar);
+  color: var(--tom-escuro-fundo);
 
   font-size: 1.15rem;
   line-height: 1.6;
@@ -114,7 +115,7 @@
   align-items: center;
   gap: 12px;
 
-  color: var(--az-mar);
+  color: var(--tom-escuro-fundo);
 
   font-size: 1.1rem;
   font-weight: 600;
@@ -125,7 +126,7 @@
   align-items: center;
   justify-content: center;
 
-  color: var(--az-destaque);
+  color: var(--tom-destaque);
 
   font-size: 1.3rem;
   font-weight: 700;

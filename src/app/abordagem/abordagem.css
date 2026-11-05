@@ -1,34 +1,29 @@
 #abordagem {
   position: relative;
   height: auto;
-  padding: 148px max(32px, calc((100% - 1180px) / 2)) 95px;
+  padding: 9.25rem max(2rem, calc((100% - 73.7rem) / 2)) 5.9rem;
   overflow: hidden;
-  background: #F5F1E9;
+  background: var(--creme-suave);
 }
 
-.fonte_header{
-    font-size: 13px;
-    color: #006AC7;
-    font-weight: bold;
-    letter-spacing: 0.16em;
-}
-
-i{
+.quadros i{
     margin-top: 7%;
     margin-left: 10%;
-    color: #0F2A71;
+    color: var(--tom-secundario);
 }
+
 .fonte_header2{
-    font-size: 44.01px;
-    color: #001740;
+    font-size: 2.75rem;
+    color: var(--tom-destaque);
     font-weight: bold;
 }
+
 .psy-eyebrow {
     display: inline-flex;
     align-items: center;
     gap: 9px;
-    color: #007BE5;
-    font-size: 13px;
+    color: var(--tom-principal);
+    font-size: 1.3rem;
     font-weight: 700;
     letter-spacing: 0.16em;
     text-transform: uppercase;
@@ -43,37 +38,40 @@ i{
 .div_reader{
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 3rem;
 }
 
 p{
-    color: #4D4D4D;
-    font-size: 19px;
+    color: var(--texto-principal);
+    font-size: 1.25rem;
 }
 
 .aspas{
     margin-left: 10%;
     text-align:left;
-    font-size: 54px;
-    color: #FFDB60;
+    font-size: 1.25rem;
+    color: var(--acento-leve);
     font-weight: 700;
-    
 }
+
 .p_quadrao{
-    margin-left: 10%;
+    margin-left: 10%;   
     text-align:left;
-    font-size: 31px;
-    color: #FFFFFF;
+    font-size: 2.2rem;
+    color: var(--creme-suave);
+    padding-top: 1.2rem;
 }
 
 .div_maior{
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     gap: 5rem;
     align-items: center;
 }
+
 .div_quadros{
     margin-top: 4rem;
-    width: 45rem;
+    width: 100%;
     height: 30rem;
     border-radius: 5%;
     display: flex;
@@ -84,113 +82,146 @@ p{
     margin-top: 4rem;
     width: 25rem;
     height: 30rem;
-    background-color: #142C4C;
-    border-radius: 5%;
+    background-color: var(--tom-principal);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .quadros{
     width: 50%;
     height: 50%;
-    box-shadow: 0 0 1px 1px #b1aba1;
+    box-shadow: 0 0 1px 1px var(--creme-base);
     border-radius: 1.5%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .quadros:hover{
-    background-color: #e4ded2;
+    background-color: var(--creme-base);
     transform: translateY(-5px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
 .i_usuario{
-    margin-top: 35%;
-    color: #F4C400;
+    color: var(--acento-leve);
+}
+
+.usuario-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.info-usuario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .usuario{
-    margin-top: -10%;
-    margin-left: 25%;
-    font-size: 14px;
-    color: #DBDBDB
+    font-size: 1.2rem;
+    color: var(--creme-suave);
 }
 
 .usuario2{
-    margin-left: 25%;
-    font-size: 14px;
-    color: #DBDBDB
+    font-size: 1.1rem;
+    color: var(--creme-suave);
 }
 h2{
     margin-left: 5%;
     margin-top: 10%;
-    color: #001740;
-    font-size: 23px;
+    color: var(--tom-principal);
+    font-size: 1.4rem;
 }
 
 .p_quadros{
-    font-size: 16px;
-    color:#4D4D4D;
+    font-size: 1rem;
+    color: var(--texto-principal);
     margin-left: 5%;
     margin-top: 1%;
 }
 
-.info{
-    height: 25px;
-    width: 25px;
-    border-radius: 10%;
-    color: #F4C400;
-}
-
 @media (max-width: 1024px) {
     .div_maior {
+        display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 2rem;
     }
 
     .div_quadros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
         width: 100%;
         height: auto;
         margin-top: 2rem;
     }
 
+    .quadros {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .quadros h2, .quadros i{
+        margin-top: 1rem;
+    }
+
     .div_quadrao {
         width: 100%;
         height: auto;
-        padding: 30px;
+        padding: 2rem 3rem;
         margin-top: 0;
     }
 
-    .usuario {
-        margin-top: -35px;
+    .p_quadrao{
+        text-align: center;
+    }
+
+    .p_quadrao, .aspas{
+        margin-left: 0;
     }
 }
 
 @media (max-width: 768px) {
     #abordagem {
-        padding: 60px 24px 50px;
+        padding-top: 4rem;
     }
 
     .div_reader {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
+        align-items: center;
+        gap: 0rem;
+        text-align: center;
     }
 
     .fonte_header2 {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     p {
-        font-size: 16px;
+        font-size: 1.5rem;
     }
 
     .div_quadros {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
     }
 
     .quadros {
         width: 100%;
         height: auto;
-        padding: 20px;
+        padding: 2rem;
+    }
+
+    .quadros h2, .quadros i{
+        margin-top: 1rem;
     }
 
     i {
@@ -201,7 +232,7 @@ h2{
     h2 {
         margin-top: 12px;
         margin-left: 0;
-        font-size: 20px;
+        font-size: 1.5rem;
     }
 
     .p_quadros {
@@ -213,53 +244,56 @@ h2{
         margin-left: 0;
     }
 
-    .p_quadrao {
-        font-size: 22px;
-    }
-
-    .i_usuario {
-        margin-top: 20px;
-    }
-
-    .usuario {
-        margin-top: -35px;
-        margin-left: 60px;
-    }
-
-    .usuario2 {
-        margin-left: 60px;
+    .div_quadrao {
+        gap: 1.5rem;
     }
 }
 
 @media (max-width: 480px) {
     #abordagem {
-        padding: 40px 16px 40px;
+        padding-top: 4rem;
+    }
+
+    .div_quadros {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .quadros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .quadros i{
+        margin-left: 0;
+    }
+
+    .p_quadros {
+        margin-top: 1rem;
     }
 
     .fonte_header2 {
-        font-size: 26px;
+        font-size: 1.6rem;
     }
 
     .p_quadrao {
-        font-size: 18px;
+        font-size: 1.1rem;
     }
 
     .quadros {
-        padding: 16px;
+        padding: 1rem;
     }
 
     .div_quadrao {
-        padding: 20px;
+        padding: 1.2rem;
+        gap: 1rem;
     }
 
-    .usuario {
-        margin-top: -38px;
-        margin-left: 55px;
-        font-size: 13px;
-    }
-
-    .usuario2 {
-        margin-left: 55px;
-        font-size: 12px;
+    .usuario, .usuario2 {
+        font-size: 0.9rem;
     }
 }

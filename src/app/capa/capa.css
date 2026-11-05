@@ -3,8 +3,8 @@
   height: 100dvh;
   padding: 148px max(32px, calc((100% - 1180px) / 2)) 95px;
   overflow: hidden;
-  background: var(--az-mar);
-  color: #fff;
+  background: var(--tom-escuro-fundo);
+  color: var(--branco);
 }
 
 #capa::before {
@@ -93,7 +93,7 @@
   bottom: -8px;
   left: 0;
   height: 2px;
-  background: var(--am-leve, #ffcc00);
+  background: var(--acento-leve);
   content: "";
   opacity: 0;
   transform: scaleX(0.35);
@@ -171,20 +171,21 @@
   border-radius: 160px 160px 0 0;
   overflow: hidden;
   position: relative;
+  background-color: var(--tom-principal);
 }
 
 .arch-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 42% center;
+  object-position: 42% 30%;
 }
 
 .info-titulo {
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  color: var(--am-leve);
+  color: var(--acento-dourado);
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.16em;
@@ -208,13 +209,13 @@
 }
 
 .informacoes h1 em {
-  color: var(--am-leve);
+  color: var(--acento-dourado);
 }
 
 .hero-texto {
   max-width: 480px;
   margin: 0;
-  color: #dbdbdb;
+  color: var(--acento-leve);
   font-size: 20px;
   line-height: 1.4;
 }
@@ -245,7 +246,7 @@ a.botao {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #fff;
+  color: var(--creme-base);
   font-weight: 600;
   transition:
     color 180ms ease,
@@ -254,8 +255,8 @@ a.botao {
 
 .link-botao:hover {
   gap: 12px;
-  color: var(--am-leve);
-  border: 1px solid var(--am-leve);
+  color: var(--acento-leve);
+  border: 1px solid var(--acento-leve);
 }
 
 .anotacao {
@@ -268,7 +269,7 @@ a.botao {
 }
 
 .anotacao i {
-  color: var(--am-leve);
+  color: var(--acento-leve);
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -291,7 +292,7 @@ a.botao {
     transform: translateX(-50%) translateY(-10px);
     width: calc(100% - 1rem);
     max-width: 80%;
-    background-color: var(--az-petroleo);
+    background-color: var(--tom-principal);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 16px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
@@ -367,7 +368,7 @@ a.botao {
     transform: translateX(-50%) translateY(-10px);
     width: calc(100% - 1rem);
     max-width: 400px;
-    background-color: var(--az-petroleo);
+    background-color: var(--tom-principal);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 16px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);

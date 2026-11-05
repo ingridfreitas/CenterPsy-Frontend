@@ -5,7 +5,7 @@
 .contact-section {
   width: 100%;
   padding: 100px 8%;
-  background-color: var(--az-mar);
+  background-color: var(--tom-escuro-fundo);
 }
 
 .contact-container {
@@ -33,7 +33,7 @@
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.12em;
-  color: var(--am-leve);
+  color: var(--acento-leve);
 }
 
 .contact-intro h2 {
@@ -81,7 +81,7 @@
 .form-group label {
   font-size: 1rem;
   font-weight: 600;
-  color: var(--az-mar);
+  color: var(--tom-escuro-fundo);
 }
 
 .form-group input,
@@ -95,7 +95,7 @@
   border-radius: 8px;
 
   background-color: #ffffff;
-  color: var(--az-mar);
+  color: var(--tom-escuro-fundo);
 
   font-family: inherit;
   font-size: 1rem;
@@ -112,7 +112,7 @@
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: var(--az-destaque);
+  border-color: var(--tom-destaque);
 }
 
 
@@ -128,8 +128,8 @@
   border: none;
   border-radius: 6px;
 
-  background-color: var(--am-dourado);
-  color: var(--az-mar);
+  background-color: var(--acento-dourado);
+  color: var(--tom-escuro-fundo);
 
   font-family: inherit;
   font-size: 1rem;
@@ -143,11 +143,11 @@
 }
 
 .contact-button:hover {
-  background-color: var(--am-leve);
+  background-color: var(--acento-leve);
 }
 
 .contact-button:focus-visible {
-  outline: 3px solid var(--am-leve);
+  outline: 3px solid var(--acento-leve);
   outline-offset: 3px;
 }
 
